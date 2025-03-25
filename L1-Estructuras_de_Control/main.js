@@ -38,6 +38,7 @@ if (age >= 18) {
 //1er punto: Declarar una variable.
 //let ageUser = window.prompt("¿CUÁNTOS AÑOS TIENES?");
 //2do punto: La siguiente estructura pretende validar si la condición se cumple o no se cumple
+
 if(ageUser >= 18 ){
     console.log("ERES MAYOR DE EDAD")
 }else {
@@ -49,20 +50,30 @@ if(ageUser >= 18 ){
 //para guardar ese dato y solicitar su nombre nuevamente para simular que se le brinda acceso
 
 //1er punto: Pedir al usuario que brinde su nombre
-const user = window.prompt("¿CUÁL ES TU NOMBRE?");
-const baseDeDatos = "Amable"; //2do punto: Simular que se cuenta con una base de datos. Nombre que se ha guardado en la base de datos
+//2do punto: Simular que se cuenta con una base de datos. Nombre que se ha guardado en la base de datos
 
-console.log("¿EL USUARIO ES EL MISMO?"); //3er punto: Definición de los mensajes de la consola con Console.log(); el cual permite mostrar los mensajes en la consola y ver los datos que se tienen en un instante del código.
-console.log(user == baseDeDatos); // signo: == [igualdad débil] compara dos valores, pero convierte los tipos si es necesario antes de la comparación
+const user = window.prompt("¿CUÁL ES TU NOMBRE?");
+const baseDeDatos = "Amable"; 
+
+//3er punto: Definición de los mensajes de la consola con Console.log(); el cual permite mostrar los mensajes en la consola y ver los datos que se tienen en un instante del código.
+// signo: == [igualdad débil] compara dos valores, pero convierte los tipos si es necesario antes de la comparación
+
+console.log("¿EL USUARIO ES EL MISMO?"); 
+console.log(user == baseDeDatos); 
+
+//signo: != [deferencia débil] compara dos valores y devuelve true si son diferentes ignorando su tipo.
 
 console.log("¿Si son diferentes, debo negar acceso a la app?")
-console.log(user != baseDeDatos); //signo: != [deferencia débil] compara dos valores y devuelve true si son diferentes ignorando su tipo.
+console.log(user != baseDeDatos); 
 
 //4to punto: Si el dato fuera diferente...
-console.log("El usuario es bienvenido a la app"); //Se procede a validar la condición para saber si es el usuario correcto
+//Se procede a validar la condición para saber si es el usuario correcto
+//Mensaje tipo pop up, que indica información al usuario.
+
+console.log("El usuario es bienvenido a la app"); 
 if(user != baseDeDatos){
     console.log("EL USUARIO NO ES EL MISMO");
-    alert("Acceso denegado :(  ¡No es usuario de la app!"); //Mensaje tipo pop up, que indica información al usuario.
+    alert("Acceso denegado :(  ¡No es usuario de la app!"); 
 }else {
     console.log("EL USUARIO ES EL MISMO");
     alert("Hola :)  ¡Te estabamos esperando!");
