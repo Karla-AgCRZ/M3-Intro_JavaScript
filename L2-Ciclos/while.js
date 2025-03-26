@@ -12,3 +12,5 @@ while(index < 11){
     // index = index + 1 | <----- primer forma válida
     index++; //Esto hace que se sume 1 a index
 }
+
+//
