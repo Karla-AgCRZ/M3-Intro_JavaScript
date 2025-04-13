@@ -32,8 +32,33 @@
 //Se determina let weeksOfPregnancy = 0 al inicio y no > 9 porque no todas las personas que utilicen el programa se encuentran embarazadas.
 
 let ageUser = parseInt(window.prompt("¿Qué edad tiene?"));
-let borderTown = window.prompt("¿Reside en un municipio fronterizo del Norte de México? (Sí/No)").toLowerCase() === "Sí";
-let pregnant = window.prompt("¿Se encuentra embarazada? (Sí/No)").toLowerCase() === "Sí";
+let borderTown = window.prompt("¿Reside en un municipio fronterizo del Norte de México? (sí/no)").toLowerCase() === "sí";
+let pregnant = window.prompt("¿Se encuentra embarazada? (sí/no)").toLowerCase() === "sí";
 let weeksOfPregnancy = 0;
+
+
+if (pregnant) {
+   weeksOfPregnancy = parseInt(window.prompt("¿Cuántas semanas de gestación tiene?"));
+}
+
+let birthYear = parseInt(window.prompt("¿En que año nació?"));
+let currentYear = new Date().getFullYear(); // Variable que se establece para detectar autómaticamente el año en curso. 
+
+/// 3er PUNTO | Determinar mis estructuras de control con: If o else if, else. Para comparar y tomar decisiones.
+// &&: Es un operador lógico y significa 'y'.
+
+if (ageUser > 18 && borderTown) {
+   window.alert("Puede vacunarse ya que usted es mayor de edad y reside en un municipio fronterizo del norte de México 👍");
+} else if (pregnant && ageUser > 18 && weeksOfPregnancy > 9) {
+   window.alert("Puede vacunarse ya usted está embarazada, es mayor de edad y cuenta con más de 9 semanas de gestación 👍");
+} else if (pregnant && ageUser > 18 && weeksOfPregnancy <= 9){
+   window.alert("Disculpe, usted no puede vacunarse todavía ya que aunque está embarazada y es mayor de edad, tiene menos de 9 semanas de gestación 📝❌");
+} else if ((currentYear - birthYear) >= 30){
+   window.alert("Puede vacunarse porque cumple 30 años o más este año 👍");
+} else {
+   window.alert("Disculpe, usted no cuenta con los requisitos para poder vacunarse 📝❌");
+}
+
+
 
 
