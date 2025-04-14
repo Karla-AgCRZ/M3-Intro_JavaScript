@@ -42,7 +42,7 @@ if (pregnant) {
 }
 
 let birthYear = parseInt(window.prompt("¿En que año nació?"));
-let currentYear = new Date().getFullYear(); // Variable que se establece para detectar autómaticamente el año en curso. 
+let currentYear = new Date().getFullYear(); // Variable que se establece para detectar autómaticamente el año en curso.  */
 
 /// 3er PUNTO | Determinar mis estructuras de control con: If o else if, else. Para comparar y tomar decisiones.
 // &&: Es un operador lógico y significa 'y'.
@@ -57,8 +57,5 @@ if (ageUser > 18 && borderTown) {
    window.alert("Puede vacunarse porque cumple 30 años o más este año 👍");
 } else {
    window.alert("Disculpe, usted no cuenta con los requisitos para poder vacunarse 📝❌");
-}
-
-
-
+} 
 
