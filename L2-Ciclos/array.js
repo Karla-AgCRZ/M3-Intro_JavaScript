@@ -34,23 +34,23 @@
 //'for ... in' recorre todas las propiedades (frutas) del objeto (contadorFrutas) y las imprime junto con su cantidad.  
 
 
-const frutas = ["ciruela","manzana","pera", "piña", "melón", "sandía", "uva", "ciruela", "piña", "melón", "sandía", "pera", "manzana", "pera" , "sandía", "ciruela", "melón", "piña" , "sandía", "uva", "manzana", "uva", "piña", "manzana", "melón", "piña", "sandía", "uva", "ciruela", "sandía" , "melón", "piña", "sandía", "piña"];
+const frutasA = ["ciruela","manzana","pera", "piña", "melón", "sandía", "uva", "ciruela", "piña", "melón", "sandía", "pera", "manzana", "pera" , "sandía", "ciruela", "melón", "piña" , "sandía", "uva", "manzana", "uva", "piña", "manzana", "melón", "piña", "sandía", "uva", "ciruela", "sandía" , "melón", "piña", "sandía", "piña"];
 
-const contadorFrutas = {};
+const contadorFrutasA = {};
 
-for(let i = 0; i < frutas.length; i++){
-   const fruta = frutas[i]; //Se accede a cada furta de manera individual.
+for(let i = 0; i < frutasA.length; i++){
+   const fruta = frutasA[i]; //Se accede a cada furta de manera individual.
 
-   if(contadorFrutas[fruta]){
-      contadorFrutas[fruta]++; // Si ya existe el tipo de fruta, el contador aumenta 1.
+   if(contadorFrutasA[fruta]){
+      contadorFrutasA[fruta]++; // Si ya existe el tipo de fruta, el contador aumenta 1.
    } else {
-      contadorFrutas[fruta] = 1; // Si no existe, se inicializa con 1.
+      contadorFrutasA[fruta] = 1; // Si no existe, se inicializa con 1.
    }
 }
 
 console.log("Cantidad de cada tipo de fruta 🍏: ");
-for (const fruta in contadorFrutas) {
-   console.log(`${fruta}: ${contadorFrutas[fruta]}`);
+for (const fruta in contadorFrutasA) {
+   console.log(`${fruta}: ${contadorFrutasA[fruta]}`);
 } 
 
 
@@ -65,19 +65,19 @@ for (const fruta in contadorFrutas) {
 //En este caso: Con el ciclo 'while'  se declara una variable i = 0 para controlar el ídice del array. while ( i < furtas.length)  se asegura de que se recorra el arreglo completo.
 //En cada vuelta o ciclo: Se toma la fruta actual con 'frutas[i]'. Si ya se encuentra en el objeto 'contadorFrutas', se suma 1. Si no está, la inicializa en 1. Al final de cada vuelta, se incrementa en i con i++.
 
-const frutas = ["maracuyá", "sandía", "piña", "zarzamora", "guanábana", "maracuyá", "piña", "guanábana", "sandía", "zarzamora", "piña", "sandía", "maracuyá", "guanábana", "maracuyá", "piña", "guanábana", "zarzamora", "piña", "maracuyá", "zarzamora", "piña"];
+const frutasB = ["maracuyá", "sandía", "piña", "zarzamora", "guanábana", "maracuyá", "piña", "guanábana", "sandía", "zarzamora", "piña", "sandía", "maracuyá", "guanábana", "maracuyá", "piña", "guanábana", "zarzamora", "piña", "maracuyá", "zarzamora", "piña"];
 
-const contadorFrutas = {};
+const contadorFrutasB = {};
 
 let i = 0; // Se inicializa el índice en 0.
 
-while (i < frutas.length) {
-   const fruta = frutas[i];
+while (i < frutasB.length) {
+   const fruta = frutasB[i];
 
-   if (contadorFrutas[fruta]) {
-      contadorFrutas[fruta]++;
+   if (contadorFrutasB[fruta]) {
+      contadorFrutasB[fruta]++;
    } else {
-      contadorFrutas[fruta] = 1;
+      contadorFrutasB[fruta] = 1;
    }
 
    i++;  // IMPORTANTE: Incrementar el índice para evitar el bucle infinito.
@@ -86,8 +86,8 @@ while (i < frutas.length) {
 // Imprimir el resultado en el consola.
 
 console.log("Cantidad de cada tipo de fruta 🍍: ");
-for (const fruta in contadorFrutas) {
-   console.log(`${fruta}: ${contadorFrutas[fruta]}`);
+for (const fruta in contadorFrutasB) {
+   console.log(`${fruta}: ${contadorFrutasB[fruta]}`);
 }
 
 /// ENTENDIENDO SUS DIFERENCIAS 'FOR' Y 'WHILE'
