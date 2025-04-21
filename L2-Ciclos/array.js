@@ -34,7 +34,7 @@
 //'for ... in' recorre todas las propiedades (frutas) del objeto (contadorFrutas) y las imprime junto con su cantidad.  
 
 
-/* const frutas = ["ciruela","manzana","pera", "piña", "melón", "sandía", "uva", "ciruela", "piña", "melón", "sandía", "pera", "manzana", "pera" , "sandía", "ciruela", "melón", "piña" , "sandía", "uva", "manzana", "uva", "piña", "manzana", "melón", "piña", "sandía", "uva", "ciruela", "sandía" , "melón", "piña", "sandía", "piña"];
+const frutas = ["ciruela","manzana","pera", "piña", "melón", "sandía", "uva", "ciruela", "piña", "melón", "sandía", "pera", "manzana", "pera" , "sandía", "ciruela", "melón", "piña" , "sandía", "uva", "manzana", "uva", "piña", "manzana", "melón", "piña", "sandía", "uva", "ciruela", "sandía" , "melón", "piña", "sandía", "piña"];
 
 const contadorFrutas = {};
 
@@ -51,7 +51,7 @@ for(let i = 0; i < frutas.length; i++){
 console.log("Cantidad de cada tipo de fruta 🍏: ");
 for (const fruta in contadorFrutas) {
    console.log(`${fruta}: ${contadorFrutas[fruta]}`);
-} */
+} 
 
 
 //2DA SOLUCIÓN UTILIZANDO EL CICLO 'WHILE'
