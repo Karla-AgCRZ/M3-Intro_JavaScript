@@ -1,10 +1,11 @@
+//2DP PASO: DESARROLLANDO LA LÓGICA
+
 //El saldo inicial de la cuenta es de $1000.
 //● El usuario puede ingresar un monto a retirar.
 //● Se verifica si el monto solicitado es menor o igual al saldo disponible.
 //● Si el monto es válido, se realiza la transacción y se actualiza el saldo.
 //● Se informa al usuario del nuevo saldo disponible.
-//● Si el monto es mayor al saldo disponible, se informa al usuario que la operación no
-//puede realizarse por falta de fondos.
+//● Si el monto es mayor al saldo disponible, se informa al usuario que la operación no puede realizarse por falta de fondos.
 
 
 //* 1) Declarar variables
